@@ -18,6 +18,10 @@ public class Garage {
 		this.listOfVehicles = vehicles;
 	}
 	
+	public void emptyGarage() {
+		this.listOfVehicles = new ArrayList<Vehicle>();
+	}
+	
 	public ArrayList<String> getVehicles() {
 		
 		ArrayList<String> names = new ArrayList<String>();
