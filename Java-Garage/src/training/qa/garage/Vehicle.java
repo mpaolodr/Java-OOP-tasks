@@ -46,7 +46,7 @@ public abstract class Vehicle implements VehicleActions{
 	
 	public String getCompleteDetails() {
 		
-		return String.format("Vehicle Model: %s\n Manufacturer: %s\n Tank Size: %d\n Top Speed: %d%s\n Number of Wheels: %d\n ------------", this.model, this.manufacturer, this.tankSize, this.topSpeed, this.speedUnits, this.numWheels);
+		return String.format(" Vehicle Model: %s\n Manufacturer: %s\n Tank Size: %.2f\n Top Speed: %d %s\n Number of Wheels: %d\n ------------", this.model, this.manufacturer, this.tankSize, this.topSpeed, this.speedUnits, this.numWheels);
 		
 		
 	}
