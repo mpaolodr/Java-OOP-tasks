@@ -6,18 +6,24 @@ public class Motorcycle extends Vehicle {
 
 	private boolean isCustom;
 	private int currentSpeed = 0;
+	private double price = 0;
 
-	public Motorcycle(String model, String manufacturer, int tankSize, int topSpeed, String speedUnits, int numWheels, boolean isCustom,
-			String owner) {
-		super(model, manufacturer, tankSize, topSpeed, speedUnits, numWheels, owner);
+	public Motorcycle(String model, String manufacturer, int tankSize, int topSpeed, String speedUnits, int numWheels,
+			boolean isCustom, String owner, double originalPrice, String type, int id) {
+		super(model, manufacturer, tankSize, topSpeed, speedUnits, numWheels, owner, type, id);
 		this.isCustom = isCustom;
+		this.price = originalPrice;
 
 	}
-	
+
+	public double getPrice() {
+		return this.price;
+	}
+
 	public boolean getIsCustom() {
 		return this.isCustom;
 	}
-	
+
 	public void setIsCustom() {
 		this.isCustom = true;
 	}

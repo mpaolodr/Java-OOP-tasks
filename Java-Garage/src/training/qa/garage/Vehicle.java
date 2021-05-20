@@ -9,9 +9,11 @@ public abstract class Vehicle implements VehicleActions{
 	private int numWheels; 
 	private String model;
 	private String owner;
+	private String type;
+	private int vehicleId;
 	
 	
-	public Vehicle(String model, String manufacturer, double tankSize, int topSpeed, String speedUnits, int numWheels, String  owner) {
+	public Vehicle(String model, String manufacturer, double tankSize, int topSpeed, String speedUnits, int numWheels, String  owner, String type, int id) {
 		this.model = model;
 		this.manufacturer = manufacturer;
 		this.tankSize = tankSize;
@@ -19,6 +21,20 @@ public abstract class Vehicle implements VehicleActions{
 		this.speedUnits = speedUnits;
 		this.numWheels = numWheels;
 		this.owner = owner;
+		this.type = type;
+		this.vehicleId = id;
+	}
+	
+	public int getVehicleId() {
+		return this.vehicleId;
+	}
+	
+	public String getType() {
+		return this.type;
+	}
+	
+	public double getTankSize() {
+		return this.tankSize;
 	}
 	
 	public String getOwner() {
