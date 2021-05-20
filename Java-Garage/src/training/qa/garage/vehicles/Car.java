@@ -9,8 +9,8 @@ public class Car extends Vehicle {
 	private int currentSpeed = 0;
 
 	public Car(String model, String manufacturer, int tankSize, int topSpeed, String speedUnits, int numWheels, boolean isAutomatic,
-			boolean isBrandNew, String owner) {
-		super(model, manufacturer, tankSize, topSpeed, speedUnits, numWheels, owner);
+			boolean isBrandNew, String owner, String type, int id) {
+		super(model, manufacturer, tankSize, topSpeed, speedUnits, numWheels, owner, type, id);
 		this.isAutomatic = isAutomatic;
 		this.isBrandNew = isBrandNew;
 	}
